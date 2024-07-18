@@ -1,0 +1,153 @@
+.calendar-page {
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-container {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center; 
+  margin-left: 100px;
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar-row {
+  display: flex;
+}
+
+.calendar-table th, .calendar-table td {
+  border: 1px solid #ccc;
+  text-align: center;
+  width: 14.28%;
+  height: 150px;
+  vertical-align: middle;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-table th {
+  background-color: #ff0000;
+  color: white;
+  font-weight: bold;
+}
+
+.calendar-cell {
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.calendar-day-number {
+  font-size: 14px;
+  color: #000;
+  align-self: flex-end;
+}
+
+.calendar-task-type {
+  font-size: 16px;
+  color: #000;
+}
+
+.calendar-task-details {
+  font-size: 14px;
+  color: #555;
+}
+
+.calendar-trainer {
+  font-size: 12px;
+  color: #888;
+}
+
+.calendar-button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+}
+
+.calendar-back-button, .calendar-complete-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.calendar-back-button {
+  background-color: #555;
+  color: white;
+  margin-left: 180px;
+}
+
+
+.calendar-complete-button {
+  background-color: #e74c3c;
+  color: white;
+  margin-right: -550px;
+}
+
+.calendar-back-button:hover {
+  background-color: #777;
+}
+
+.calendar-complete-button:hover {
+  background-color: #c0392b;
+}
+
+.calendar-progress-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.calendar-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  margin-top: 40px;
+}
+
+.calendar-step-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #888;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.calendar-step.active .calendar-step-number {
+  background-color: #2ecc71;
+}
+
+.calendar-step .calendar-step-number {
+  background-color: #888;
+}
+
+.calendar-step-label {
+  font-size: 0.8em;
+  color: #fff;
+}
+
+.calendar-message {
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2em;
+}
